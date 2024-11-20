@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class SignInScreen extends StatefulWidget {
-  SignInScreen({super.key});
+  const SignInScreen({super.key});
 
   @override
   State<SignInScreen> createState() => _SignInScreenState();
@@ -198,7 +198,7 @@ class _SignInScreenState extends State<SignInScreen> {
             SizedBox(height: MediaQuery.of(context).size.height - 650),
             InkWell(
               onTap: () {
-                Navigator.push(context,MaterialPageRoute(builder:(context)=>BlocProvider(create:(context)=>HomeScreenBloc(),child:HomeScreen())));
+                Navigator.push(context,MaterialPageRoute(builder:(context)=>BlocProvider(create:(context)=>HomeScreenBloc(),child:const HomeScreen())));
               },
               child: Padding(
                 padding: const EdgeInsets.only(left: 20, right: 20),

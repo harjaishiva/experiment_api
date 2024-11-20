@@ -55,7 +55,7 @@ class OnBoardingScreen extends StatelessWidget {
           const SizedBox(height: 20),
           InkWell(
               onTap: () {
-                Navigator.push(context,MaterialPageRoute(builder:(context)=>BlocProvider(create:(context)=>SignUpScreenBloc(),child:SignUpScreen())));
+                Navigator.push(context,MaterialPageRoute(builder:(context)=>BlocProvider(create:(context)=>SignUpScreenBloc(),child:const SignUpScreen())));
               },
               child: Padding(
                 padding: const EdgeInsets.only(left: 20, right: 20),
@@ -84,7 +84,7 @@ class OnBoardingScreen extends StatelessWidget {
               const SizedBox(width: 5),
               InkWell(
                 onTap:(){
-                  Navigator.push(context,MaterialPageRoute(builder: (context)=> BlocProvider(create:(context)=>SignInScreenBloc(),child:SignInScreen())));
+                  Navigator.push(context,MaterialPageRoute(builder: (context)=> BlocProvider(create:(context)=>SignInScreenBloc(),child:const SignInScreen())));
                 },
                 child: const Text("Log in",
                     style: TextStyle(

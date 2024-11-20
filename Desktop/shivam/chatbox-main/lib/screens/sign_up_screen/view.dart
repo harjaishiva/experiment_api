@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class SignUpScreen extends StatefulWidget {
-  SignUpScreen({super.key});
+  const SignUpScreen({super.key});
 
   @override
   State<SignUpScreen> createState() => _SignUpScreenState();
@@ -322,7 +322,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               SizedBox(height: MediaQuery.of(context).size.height - 800),
               InkWell(
                   onTap: () {
-                    Navigator.push(context,MaterialPageRoute(builder:(context)=>BlocProvider(create:(context)=>HomeScreenBloc(),child:HomeScreen())));
+                    Navigator.push(context,MaterialPageRoute(builder:(context)=>BlocProvider(create:(context)=>HomeScreenBloc(),child:const HomeScreen())));
                   },
                   child: Padding(
                     padding: const EdgeInsets.only(left: 20, right: 20),
